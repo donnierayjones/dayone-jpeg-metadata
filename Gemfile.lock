@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_exiftool (2.5.1)
+    mini_exiftool_vendored (9.2.7.v1)
+      mini_exiftool (>= 1.6.0)
+    plist (3.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mini_exiftool_vendored
+  plist
+
+BUNDLED WITH
+   1.11.2
