@@ -21,7 +21,7 @@ task :export do
        (excludes.empty? or (entry['Tags'] & excludes).empty?)
 
       photo_path = entry_path.sub('entries', 'photos').sub('.doentry', '.jpg')
-      output_path = File.join outputFolder, entry['Creation Date'].strftime("%Y%m%dT%H%M%S") + '.jpg'
+      output_path = File.join outputFolder, entry['Creation Date'].strftime("%Y%m%dT%H%M%S") + entry['UUID'][0..5] + '.jpg'
 
       if(File.exist? photo_path)
         FileUtils.cp photo_path, output_path
